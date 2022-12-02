@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,28 +19,39 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark bg-gradient navbar-expand-lg">
+    <!-- Navbar content -->
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Will's Research</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Research
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="InitialResearchWill.html">Initial Research</a></li>
               <li><a class="dropdown-item" href="RootCausesWill.html">Root Causes</a></li>
-              <li><a class="dropdown-item" href="CaseStudyWill.html">Case Study</a></li>
+              <li><a class="dropdown-item" href="CaseStudyWill.html">Case study</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"></a>
+          </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
-  </nav>
+</nav>
 <!-- STEP TWO: CUSTOMIZE THE LOOK-->
 <!-- Make adjustments to the display size, text color, background color, border, text alignment, etc... -->
 <!-- Use 4 different types of bootstrap classes -->
@@ -45,34 +63,38 @@
 <div class="container text-center">
 <!-- To begin to understand how the following "grid" works, check out this link. This is the code we have below
 https://getbootstrap.com/docs/5.2/layout/grid/#equal-width  -->
-<div class="container">
-    <div class="row">
-      <div class="col" style ="background-color:aquamarine">
-        <h3>
-            Problem Statement
-          </h3>
-        <h1>
-          Face recognition remains a powerful technology with significant implications in both criminal justice
-        </h1>
+<div class="container text-center">
+  <!-- To begin to understand how the following "grid" works, check out this link. This is the code we have below
+  https://getbootstrap.com/docs/5.2/layout/grid/#equal-width  -->
+      <div class="row">
+        <div class="col border border-secondary border border-4 p-3 mb-2 bg-secondary text-dark">
+          <h1>Problem Statement</h1>
+          <p>Facial recognition systems have racial biases</p>
+        </div>
+        <div class="col border border-secondary border border-4 p-3 mb-2 bg-primary text-dark">
+          <h1>Need Statement</h1>
+          <p>Face ID algorithms need better accuracy, larger sample sizes, and more diverse training data</p>
+        </div>
       </div>
-      <div class="col" style ="background-color:blanchedalmond">
-        <h3>
-            Need Statement
-          </h3>
+      <div class="row">
+        <div class="col border border-secondary border border-4 text-start text-dark">
+         <li>"In general, one of the main reasons for bias might be the induction of nonequally distributed classes in training data."</li>
+        </div>
+        <div class="col border border-secondary border border-4 text-start text-dark">
+          <li>"Many performance differences affected by attributes could be explained through the attribute’s relation to the visibility of a face, the temporal variability, and the degree of abnormality."</li>
+        </div>
+        <div class="col border border-secondary border border-4 text-start text-dark">
+          <li>"Facial recognition algorithms have implications both in social and criminal investigations. These systems misidentify people of color at a disproportionately higher rate than lighter skinned individuals, leading to black Americans being more likely than White Americans to be arrested for minor crimes."</li>
+        </div>
       </div>
+      <div class="row">
+        <div class="col border border-secondary border border-4 p-3 mb-2 bg-primary text-dark">
+        <h5>Citation: http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf</h5>
     </div>
-    <div class="row">
-      <div class="col" style ="background-color:greenyellow">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates expedita ipsam nisi maiores totam dolor ab aspernatur, impedit debitis quod dolore odio, odit sed quasi, eligendi natus placeat accusantium sint!
-      </div>
-      <div class="col" style ="background-color:honeydew">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sit libero quaerat. Obcaecati a itaque accusantium, maiores delectus debitis voluptas dolor magnam optio repudiandae pariatur vel libero perferendis voluptatum exercitationem!
-      </div>
-      <div class="col" style ="background-color:sienna">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore doloremque odio necessitatibus nesciunt sit itaque quos magnam non. Recusandae perspiciatis voluptatem voluptatum veniam sed reprehenderit molestiae repudiandae qui atque?
-      </div>
-    </div>
+
   </div>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Face_ID_logo.svg/800px-Face_ID_logo.svg.png" alt="..."class="center"style="width: 27%;">
     <!-- <div class="row">
       <div class="col">
       </div>

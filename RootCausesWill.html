@@ -12,28 +12,39 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark bg-gradient navbar-expand-lg">
+    <!-- Navbar content -->
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Will's Research</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Research
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="InitialResearchWill.html">Initial Research</a></li>
               <li><a class="dropdown-item" href="RootCausesWill.html">Root Causes</a></li>
-              <li><a class="dropdown-item" href="CaseStudyWill.html">Case Study</a></li>
+              <li><a class="dropdown-item" href="CaseStudyWill.html">Case study</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"></a>
+          </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
-  </nav>
+</nav>
 <!-- STEP TWO: CUSTOMIZE THE LOOK-->
 <!-- Make adjustments to the display size, text color, background color, border, text alignment, etc... -->
 <!-- Use 4 different types of bootstrap classes -->
@@ -45,47 +56,58 @@
 <div class="container text-center">
 <!-- To begin to understand how the following "grid" works, check out this link. This is the code we have below
 https://getbootstrap.com/docs/5.2/layout/grid/#equal-width  -->
-<div class="container">
-    <div class="row">
-      <div class="col" style ="background-color:aquamarine">
-        <h3>
-            Root Causes
-          </h3>
-        <h6>
-          <li>Machine Learning models are not up to date, and need to be updated regularly with new sets of data</li>
-          <li>Inconsistent camera quality</li>
-          <li>Positioning of the face recognition model does efficiently capture all facial features of an individual </li>
-          <li>Training Data</li>
-        </h6>
-
-      </div>
-      <div class="col" style ="background-color:blanchedalmond">
-        <h3>
-          Solutions
-          </h3>
-          <h6>
-            <li>Update systems frequently with new data</li>
-            <li>Use the same quality cameras across all facial recognition devices used by institutions
-            </li>
-            <li>Use more diverse training sets to build these systems</li>
-            <li>Spreading awareness</li>
-          </h6>
+<div class="container text-center">
+  <!-- To begin to understand how the following "grid" works, check out this link. This is the code we have below
+  https://getbootstrap.com/docs/5.2/layout/grid/#equal-width  -->
+      <div class="row">
+        <div class="col border border border-dark border-4 text-dark">
+          <h1>Root Causes #1</h1>
+          <h5>Cameras that are used to identify and train facial recognition systems do not recognize darker skinned individuals at a disproportionately higher rate compared to lighter skinned individuals.</h5>
         </div>
-        <div class="lead" style ="background-color:rgb(0, 220, 245)">
-          <h6>
-            "In general, one of the main reasons for bias might be the induction of nonequally distributed classes in training data"
-            <p>
-              <h6>
-                "Many performance differences affected by attributes could be explained through the attribute’s relation to the visibility of a face, the temporal variability, and the degree of abnormality"
-              </h6>
-            </p>
-          </h6>
+          <div class="col border border border-dark border-4 text-start text-dark">
+           <li>Evidence 1: “Furthermore, skin type was chosen as a phenotypic factor of interest because default camera settings are calibrated to expose lighter-skinned individuals."</li>
           </div>
-    </div>
-    <div class="row">
+          <div class="col border border border-dark border-4 text-start text-dark">
+            <li>Explanation 1: Poorly exposed images that result from sensor optimizations for lighter-skinned subjects or poor illumination can prove challenging for automated facial analysis. By labeling faces with skin type, we  can increase our understanding of performance on this important phenotypic attribute.</li>
+          </div>
+          <div class="col border border border-dark border-4 text-start text-dark">
+            <li>Evidence 2: “Default camera settings are often optimized to expose lighter skin, methods to improve dataset composition, feature selection, and neural network architectures”</li>
+          </div>
+          <div class="col border border border-dark border-4 text-start text-dark">
+            <li>Explanation 2: Because algorithmic fairness is based on different contextual assumptions and optimizations for accuracy, it is inconsistent by nature.
+            </li>
+          </div>
       </div>
-    </div>
-  </div>
+
+        <div class="row">
+          <div class="col border border border-dark border-4 text-dark">
+          <h1>Root Causes #2</h1>
+          <h3>Training data is not diverse enough, and needs more samples.</h3>
+        </div>
+          <div class="col border border border-dark border-4 text-start text-dark">
+           <li>Evidence 1: “The description of classification methodology lacked detail and there was no mention of what training data was used.”</li>
+          </div>
+          <div class="col border border border-dark border-4 text-start text-dark">
+            <li>Explanation 1: This quote refers to the Microsoft’s Face Detect service, which they described as using advanced statistical algorithms that “may not always be 100% precise.”</li>
+          </div>
+          <div class="col border border border-dark border-4 text-start text-dark">
+            <li>Evidence 2: "Instead, darker skin may be highly correlated with facial geometries or gender display norms that were less represented in the training data of the evaluated classifiers."</li>
+          </div>
+          <div class="col border border border-dark border-4 text-start text-dark">
+            <li>Explanation 2: The skin color ultimately effects whether or not the face ID will accurately detect person. This largely effects people of color who were less represented in the training data.</li>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col border border border-dark border-4 text-dark">
+            <h1>Implication for Root Causes</h1>
+              <h3> Classification systems performed best for lighter individuals and males overall. The root causes of these issues lie in the data used to train how they identify each person individually. By using more inclusive and larger datasets, we can curb this problem over time.</h3>
+            </div>
+        </div>
+        <div class="col border border-secondary border border-4 p-3 mb-2 bg-primary text-dark">
+          <h5>Citation: http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf</h5>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
